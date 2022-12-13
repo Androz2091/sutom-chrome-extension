@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Sutom Hack3d",
+    "version": "1.0",
+    "description": "Affiche le mot du jour directement",
+    "host_permissions": [
+        "https://sutom.nocle.fr/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+               "https://sutom.nocle.fr/*"
+            ],
+            "js": [
+                "show-word.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
