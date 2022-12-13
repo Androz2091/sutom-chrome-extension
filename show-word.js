@@ -18,7 +18,6 @@ getPartieId().then((partieId) => {
         "-" +
         date.getDate().toString().padStart(2, "0");
 
-    console.log(partieId + "-" + dateStr);
     const id = btoa(partieId + "-" + dateStr);
     const txtUrl = "https://sutom.nocle.fr/mots/" + id + ".txt";
 
