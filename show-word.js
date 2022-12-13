@@ -1,5 +1,3 @@
-console.log('coucou')
-
 function getPartieId () {
     return fetch('https://sutom.nocle.fr/js/instanceConfiguration.js')
     .then((res) => {
